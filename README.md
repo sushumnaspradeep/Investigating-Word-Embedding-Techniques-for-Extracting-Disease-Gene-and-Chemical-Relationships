@@ -18,6 +18,7 @@ a. Segment large datasets: Abstracts were split into manageable segments.
 b. Create data dictionaries: Organized extracted data into CSV files for further use in word embedding models to focused on extracting relevant biomedical terms (e.g., genes, chemicals, and diseases) using MeSH identifiers.
 Filtering strategy for Disease : C04_588 "Neoplasms by Site" 
 Filtering strategy for Chemical : All were selected except Biomedical and Dental Materials" (D25) and "Pharmaceutical Preparations" (D26)
+In order to create data dictionaries, download the Uniques ID's from MESH pertaining only to above conditions, based on those uniques ID's, extract the annotation_id (identifier) and term (annotation_text) from Pubtator JSON dataset. and store these in the form of csv files to create data dictionaries. 
 Step 2: Word Embedding Generation
 Models Used:
 a.GloVe: Captures global co-occurrence statistics.
